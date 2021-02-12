@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -95,7 +95,7 @@ const useClasses = makeStyles((theme) => ({
     height: 240,
   },
 }));
-const Layout = ({ children, title }) => {
+const Layout: FC<{ title: string }> = ({ children, title }) => {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
   const classes = useClasses(theme);
@@ -104,7 +104,7 @@ const Layout = ({ children, title }) => {
     <div className={classes.root}>
       <AppBar
         position="absolute"
-        className={(classes.appBar, open && classes.appBarShift)}
+        className={open ? classes.appBarShift : classes.appBar}
         style={{ zIndex: 9999 }}
       >
         <Toolbar className={classes.toolbar}>

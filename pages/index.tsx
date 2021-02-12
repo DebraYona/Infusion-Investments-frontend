@@ -1,6 +1,5 @@
 import { makeStyles, Button } from '@material-ui/core';
 import Link from 'next/link';
-import Footer from '../components/footer';
 
 const useStyles = makeStyles({
   page: {
