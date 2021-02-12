@@ -4,7 +4,7 @@ This is a really simple project that shows the usage of Next.js with TypeScript.
 
 ## Description
 
-[Challenge](https://front-Infusion-Investments-challenge.vercel.app/) Infusion Investments challenge
+[Challenge](https://infusion-investments-frontend.vercel.app/) Infusion Investments challenge
 
 ## Installation
 
